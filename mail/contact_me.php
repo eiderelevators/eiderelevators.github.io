@@ -31,12 +31,6 @@ $mail->Port = '465';                                    // TCP port to connect t
 
 $mail->setFrom('', '');
 $mail->addAddress($email_address, $name);     // Add a recipient
-/*$mail->addReplyTo('ravi@papoye.com', 'Admin');
-$mail->addCC('ravi@papoye.com');
-$mail->addBCC('ravi@papoye.com');
-*/
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Here is the subject';
