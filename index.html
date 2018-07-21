@@ -473,15 +473,15 @@
 		<h2>Watch Our Videos</h2>
 		<h3><br></h3>
 	
-		<iframe width="540" height="315" style="margin-right: 5px;" src="https://www.youtube.com/embed/Pabx4oSBeJU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		<iframe width="540" height="315" style="margin-left: 5px;" src="https://www.youtube.com/embed/imcAPsp_LAE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe class="videoView" src="https://www.youtube.com/embed/Pabx4oSBeJU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe class="videoView" src="https://www.youtube.com/embed/imcAPsp_LAE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	</div>
 
 <div class="col-lg-12 text-center"> 
 		<h3><br></h3>
 		<h2>Know More About Us</h2>
 		<h3><br></h3>
-		<embed src="img/content/PPT_Eider.pdf" width="1100px" height="700px" class="responsive"/>
+		<embed src="img/content/PPT_Eider.pdf"  class="pdfView"/>
 	</div>
 
 </div>
@@ -545,13 +545,13 @@
     </aside> -->
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" style="padding: 20px;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-6 text-left" style="padding-top: 100px;">
                     <h2 class="section-heading">Contact Us</h2>
                     <h4 style="color:#fff;">Eider Elevators and Escalators</h4>
-                   <div class="contact_info">
+                   <div  style="text-align: left; color:#fff;">
                     No. 5, 3rd Floor, Gilma Building,
                     Outer Ring Road, Banasawadi, <br>
                     Bangalore 560043, Karnataka<br>
@@ -559,7 +559,14 @@
                     <a href="mailto:info@eiderelevators.com">info@eiderelevators.com</a>
                     </div>
                 </div>
+                <div  class="col-md-6 text-right">
+                    <div id="map" class="myMap"></div>
+                </div>
             </div>
+
+			
+
+
            <!-- <div class="row">
                 <div class="col-lg-12">
                     <form name="sentMessage" id="contactForm" method="post" novalidate>
@@ -693,10 +700,99 @@
 </script>
 
 
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(13.015606, 77.661909),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.hybrid
+};
+
+
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+var marker = new google.maps.Marker({position: mapOptions.center, map: map});
+
+}
+</script> 
+
+<!-- <script>
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 13.015606, lng: 77.661909},
+        zoom: 18,
+        mapTypeId: 'satellite'
+      });
+      map.setTilt(45);
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZMpvLENcFGWjARwBf0Cm1WRSfgOcipf4&callback=initMap">
+  </script> -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZMpvLENcFGWjARwBf0Cm1WRSfgOcipf4&callback=myMap"></script>
+
+
  <!-- End Google Tag Manager -->
 </body>
 
 <style type="text/css">
+
+    
+
+    .index {
+        width: 100%;
+    }
+
+ .myMap {
+        width: 600px;
+        height: 400px;
+        float: right;
+    }
+
+    
+    .pdfView {
+            width: 1100px;
+            height: 700px;
+        }
+
+        .videoView {
+            width: 540px;
+            height: 315px;
+            margin-left: 5px;
+        }
+
+   
+    @media (max-width: 500px){
+        .myMap {
+            padding: 10px;
+            width: 460px;
+            height: 400px;
+        } 
+
+        .index {
+            width: auto;
+        }
+
+        .pdfView {
+            width: 450px !important;
+            height:300px;
+        }
+
+    .videoView {
+            width: 450px;
+            height: 315px;
+            margin-top: 5px;
+        }
+
+
+    }
+
+
+   
+
+    
+
+
 	
 	.carousel-showmanymoveone
 {
@@ -776,6 +872,7 @@
         display: block;
       }
     }
+
 
     @media all and (min-width: 992px)
     {    
@@ -865,6 +962,9 @@
 	var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
 })();
 </script>
+
+
+
 
 
 </html>
