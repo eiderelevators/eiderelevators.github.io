@@ -647,19 +647,20 @@
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
  
- <!--Start of Tawk.to Script-->
- <script type="text/javascript">
- var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
- (function(){
- var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
- s1.async=true;
- s1.src='https://embed.tawk.to/589475d70027be0a6e27c55d/default';
- s1.charset='UTF-8';
- s1.setAttribute('crossorigin','*');
- s0.parentNode.insertBefore(s1,s0);
- })();
- </script>
+ <!--Start of Tawk.to Script- used to online chatting -->
+<!-- <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/589475d70027be0a6e27c55d/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script> -->
  <!--End of Tawk.to Script-->
+
  <!-- Google Tag Manager -->
  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -737,13 +738,11 @@ var marker = new google.maps.Marker({position: mapOptions.center, map: map});
 
 <style type="text/css">
 
-    
-
     .index {
         width: 100%;
     }
 
- .myMap {
+    .myMap {
         width: 600px;
         height: 400px;
         float: right;
@@ -753,21 +752,20 @@ var marker = new google.maps.Marker({position: mapOptions.center, map: map});
     .pdfView {
             width: 1100px;
             height: 700px;
-        }
+    }
 
-        .videoView {
-            width: 540px;
-            height: 315px;
-            margin-left: 5px;
-        }
+    .videoView {
+        width: 540px;
+        height: 315px;
+        margin-left: 5px;
+    }
 
    
-    @media (max-width: 550px){
+    @media (max-width: 600px){
         .myMap {
-            margin-top: 10px;
-            width: 450px;
+            margin-top: 15px;
+            width: 420px;
             height: 400px;
-            padding-left: -10px;
         } 
 
         .index {
@@ -779,100 +777,89 @@ var marker = new google.maps.Marker({position: mapOptions.center, map: map});
             height:300px;
         }
 
-    .videoView {
+        .videoView {
             width: 450px !important;
             height: 315px;
             margin-top: 5px;
         }
-
-
     }
-
-
-   
-
-    
-
-
 	
-	.carousel-showmanymoveone
-{
-  .carousel-control
-  { 
-    width: 4%;
-    background-image:none;
-
-    &.left 
-    {
-      margin-left:15px;
-    }
-
-    &.right 
-    {
-      margin-right:15px;
-    }
-  }
-
-  .cloneditem-1, 
-  .cloneditem-2, 
-  .cloneditem-3
-  {
-    display: none;
-  }
-
-  .carousel-inner
-  {
-    @media all and (min-width: 768px)
-    {
-      @media (transform-3d), (-webkit-transform-3d)
-      {
-        > .item.active.right,
-        > .item.next
+	.carousel-showmanymoveone {
+        .carousel-control
         { 
-          transform: translate3d(50%, 0, 0);  
-          left: 0;
+            width: 4%;
+            background-image:none;
+
+            &.left 
+            {
+            margin-left:15px;
+            }
+
+            &.right 
+            {
+            margin-right:15px;
+            }
         }
 
-        > .item.active.left,
-        > .item.prev
-        { 
-          transform: translate3d(-50%, 0, 0);
-          left: 0;
-        }
-
-        > .item.left,
-        > .item.prev.right,
-        > .item.active
+        .cloneditem-1, 
+        .cloneditem-2, 
+        .cloneditem-3
         {
-          transform: translate3d(0, 0, 0);
-          left: 0;
-        }    
-      } 
+            display: none;
+        }
 
-      > .active.left,
-      > .prev
-      {
-        left: -50%;
-      }
+    .carousel-inner
+    {
+        @media all and (min-width: 768px){
+            @media (transform-3d), (-webkit-transform-3d)
+            {
+                > .item.active.right,
+                > .item.next
+                { 
+                transform: translate3d(50%, 0, 0);  
+                left: 0;
+                }
 
-      > .active.right,
-      > .next
-      {
-        left:  50%;
-      }
+                > .item.active.left,
+                > .item.prev
+                { 
+                transform: translate3d(-50%, 0, 0);
+                left: 0;
+                }
 
-      > .left,
-      > .prev.right,
-      > .active
-      {
-        left: 0;
-      }
+                > .item.left,
+                > .item.prev.right,
+                > .item.active
+                {
+                transform: translate3d(0, 0, 0);
+                left: 0;
+                }    
+            } 
 
-      .cloneditem-1 
-      {
-        display: block;
-      }
-    }
+            > .active.left,
+            > .prev
+            {
+                left: -50%;
+            }
+
+            > .active.right,
+            > .next
+            {
+                left:  50%;
+            }
+
+            > .left,
+            > .prev.right,
+            > .active
+            {
+                left: 0;
+            }
+
+            .cloneditem-1 
+            {
+                display: block;
+            }
+        }
 
 
     @media all and (min-width: 992px)
