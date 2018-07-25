@@ -741,7 +741,11 @@ function myMap() {
 var mapOptions = {
     center: new google.maps.LatLng(13.015606, 77.661909),
     zoom: 15,
-    mapTypeId: google.maps.MapTypeId.hybrid
+    mapTypeId: google.maps.MapTypeId.hybrid,
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+    }
 };
 
 
