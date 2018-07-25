@@ -481,7 +481,7 @@
 		<h3><br></h3>
 		<h2>Know More About Us</h2>
 		<h3><br></h3>
-		<embed class="pdfView" src="img/content/PPT_Eider.pdf" />
+		<embed src="img/content/PPT_Eider.pdf"  class="pdfView"/>
 	</div>
 
 </div>
@@ -796,11 +796,11 @@ var marker = new google.maps.Marker({position: mapOptions.center, map: map});
     }
 
    
-    @media (max-width: 460px){
+    @media (max-width: 500px){
         .myMap {
             margin: 15px auto;
-            width: 400px;
-            height: 350px;
+            width: 420px;
+            height: 400px;
             float: none;
         } 
 
@@ -809,13 +809,13 @@ var marker = new google.maps.Marker({position: mapOptions.center, map: map});
         }
 
         .pdfView {
-            width: 420px;
+            width: 420px !important;
             height:300px;
         }
 
         .videoView {
-            width: 420px;
-            height: 315px;
+            width: 400px !important;
+            height: 300px;
             margin-top: 5px;
         }
     }
